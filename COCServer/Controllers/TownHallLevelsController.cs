@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using DLA.Data;
 using DLA.Models.TownHallModels;
 using DLA.Repository;
 

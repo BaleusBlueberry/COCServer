@@ -1,9 +1,9 @@
 using DLA.Data;
+using DLA.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace COCServer
 {
@@ -12,11 +12,16 @@ namespace COCServer
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+
             builder.Services.AddDbContext<ContextDLA>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("ContextDLA") ?? throw new InvalidOperationException("Connection string 'ContextDLA' not found.")));
 
-            // Add services to the container.
+            builder.Services.AddScoped<TownHallRepository>();
+
             builder.Services.AddControllersWithViews();
+
 
             //builder.Services.AddDbContext<DALContext>(options =>
             //    options.UseSqlServer(builder.Configuration.GetConnectionString("DALContext") ?? throw new InvalidOperationException("Connection string 'DALContext' not found.")));
