@@ -4,7 +4,7 @@ using DLA.Data;
 using DLA.Models.TownHallModels;
 using DLA.Repository;
 
-namespace DLA.Controllers
+namespace COCServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

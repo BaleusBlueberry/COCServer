@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace COCServer
 {
@@ -37,7 +38,7 @@ namespace COCServer
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"] ?? throw new InvalidOperationException("jwt string jwtSettings[\"SecretKey\"] not found.")))
                 };
             });
 
@@ -94,7 +95,7 @@ namespace COCServer
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseAuthorization();
+            app.UseAuthentication();
 
             app.MapControllers();
 
