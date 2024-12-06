@@ -14,6 +14,6 @@ namespace DLA.Data
         {
         }
 
-        public DbSet<DLA.Models.TownHallModels.TownHallLevels> TownHallLevels { get; set; } = default!;
+        public DbSet<TownHallLevels> TownHallLevels { get; set; } = default!;
     }
 }
