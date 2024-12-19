@@ -1,7 +1,10 @@
-﻿namespace DLA.Models.TownHallModels;
-public class DarkElixirTownHall : IEntity
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DLA.Models.TownHallModels;
+
+[Owned]
+public class DarkElixirTownHall
 {
-    public int? Id { get; set; }
     public int Minion { get; set; } = 0;
     public int HogRider { get; set; } = 0;
     public int Valkyrie { get; set; } = 0;

@@ -1,7 +1,8 @@
-﻿namespace DLA.Models.TownHallModels;
-public class SiegeMachinesTownHall : IEntity
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DLA.Models.TownHallModels;
+public class SiegeMachinesTownHall
 {
-    public int? Id { get; set; }
     public int WallWrecker { get; set; } = 0;
     public int BattleBlimp { get; set; } = 0;
     public int StoneSlammer { get; set; } = 0;

@@ -1,35 +1,43 @@
-using DLA.Data;
-using DLA.Repository;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using AspNetCore.Identity.Mongo;
+using COCServer.Startup.JWT;
+using COCServer.Startup.Seeder;
+using DLA.Interface;
+using DLA.Models;
+using DLA.Repository;
+using DLA.Servises;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace COCServer
 {
-    public class Program
+    public static class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
 
-            builder.Services.AddDbContext<ContextDLA>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("ContextDLA") ?? throw new InvalidOperationException("Connection string 'ContextDLA' not found.")));
+            builder.Services.AddSingleton<IMongoService, MongoService>();
 
-            builder.Services.AddScoped<TownHallRepository>();
+            builder.Services.AddSingleton<IRepository<TownHallLevels>, TownHallRepositoryMongo>();
 
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddIdentityMongoDbProvider<AppUser, AppRole>(identityOptions =>
+            {
+                identityOptions.Password.RequiredLength = 8;
+                identityOptions.User.RequireUniqueEmail = true;
+                identityOptions.Password.RequireDigit = true;
+                identityOptions.Password.RequireNonAlphanumeric = true;  // Requires at least one special character
+                identityOptions.Password.RequireUppercase = true;
+                identityOptions.Password.RequireLowercase = true;
 
-            //builder.Services.AddDbContext<DALContext>(options =>
-            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DALContext") ?? throw new InvalidOperationException("Connection string 'DALContext' not found.")));
-            
-            //builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options => {
-            //    options.User.RequireUniqueEmail = true;
-            //    options.Password.RequiredLength = 8;
-            //}).AddEntityFrameworkStores<DALContext>();
+            }, mongoOptions =>
+            {
+                mongoOptions.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            });
 
             var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 
@@ -47,13 +55,16 @@ namespace COCServer
                 };
             });
 
-            //builder.Services.AddScoped<JwtService>();
+            builder.Services.AddScoped<JwtService>();
+
+            builder.Services.AddScoped<Seeder>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
 
             builder.Services.AddSwaggerGen();
+
 
             var corsPolicy = "CorsPolicy";
 
@@ -76,8 +87,13 @@ namespace COCServer
                 });
             });
 
+            builder.Logging.ClearProviders();
+            builder.Logging.AddConsole(); // Add console logging
+            builder.Logging.AddDebug();
+
             var app = builder.Build();
 
+            await DataSeeder.SeedDataAsync(app);
             // Configure the HTTP request pipeline.
             //if (!app.Environment.IsDevelopment())
             //{
@@ -104,13 +120,7 @@ namespace COCServer
 
             app.MapControllers();
 
-            //app.MapStaticAssets();
-            //app.MapControllerRoute(
-            //    name: "default",
-            //    pattern: "{controller=Home}/{action=Index}/{id?}")
-            //    .WithStaticAssets();
-
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

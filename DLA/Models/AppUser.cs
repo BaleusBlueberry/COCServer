@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AspNetCore.Identity.Mongo.Model;
 
-namespace DAL.Models
+namespace DLA.Models
 {
-    public class AppUser : IdentityUser<int>
+    public class AppUser : MongoUser
     {
-        //You may add your own props
+    }
+    public class AppRole : MongoRole
+    {
     }
 }

@@ -7,9 +7,9 @@ namespace DLA.Repository
     {
         Task Add(T entity);
 
-        Task<T>? GetById(int id);
+        Task<T>? GetById(string id);
 
-        IEnumerable<T> GetAll();
+        Task<IEnumerable<T>> GetAll();
 
         Task<IEnumerable<T>> FindAll(Expression<Func<T, bool>> predicate);
 
@@ -17,11 +17,10 @@ namespace DLA.Repository
 
         Task Update(T entity);
 
-        Task Delete(int id);
+        Task Delete(string id);
 
         Task Delete(T entity);
 
         Task Delete(Expression<Func<T, bool>> predicate);
-
     }
 }

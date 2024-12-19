@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using DLA.Data;
+﻿using DLA.Interface;
+using DLA.Repository;
+using DLA.Servises;
+using DLA.Models.TownHallModels;
 
 namespace DLA
 {
@@ -9,14 +10,13 @@ namespace DLA
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<ContextDLA>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("ContextDLA") ?? throw new InvalidOperationException("Connection string 'ContextDLA' not found.")));
-            
-            // Add services to the container.
+            //builder.Services.AddDbContext<ContextDLA>(options =>
+            //    options.UseSqlServer(builder.Configuration.GetConnectionString("ContextDLA") ?? throw new InvalidOperationException("Connection string 'ContextDLA' not found.")));
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
 
             var app = builder.Build();
 

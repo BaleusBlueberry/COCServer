@@ -10,7 +10,7 @@ namespace COCServer.DTOs
 
         [Required]
         [MinLength(2), MaxLength(20)]
-        public required string Username { get; set; }
+        public required string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

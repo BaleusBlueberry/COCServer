@@ -1,7 +1,7 @@
-﻿namespace DLA.Models.TownHallModels;
-public class ElixirTownHall: IEntity
-{
-    public int? Id { get; set; }
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DLA.Models.TownHallModels;
+public class ElixirTownHall {
     public int Barbarian { get; set; } = 0;
     public int Archer { get; set; } = 0;
     public int Giant { get; set; } = 0;
