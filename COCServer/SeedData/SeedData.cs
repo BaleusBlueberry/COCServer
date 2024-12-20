@@ -1,5 +1,6 @@
 ﻿using DLA.Models;
 using Microsoft.AspNetCore.Identity;
+using System.Configuration;
 
 namespace DLA.SeedData;
 
@@ -8,14 +9,15 @@ public class Seeder
     private readonly UserManager<AppUser> _userManager;
     private readonly RoleManager<AppRole> _roleManager;
     private readonly ILogger<Seeder> _logger;
+    private readonly IConfiguration _configuration;
 
-    public Seeder(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, ILogger<Seeder> logger)
+    public Seeder(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, ILogger<Seeder> logger, IConfiguration configuration)
     {
         _userManager = userManager;
         _roleManager = roleManager;
         _logger = logger;
+        _configuration = configuration;
     }
-
     public async Task SeedRolesAndUsersAsync()
     {
         string[] roles = { "Admin" };
@@ -36,15 +38,20 @@ public class Seeder
             }
         }
 
-        var adminUser = await _userManager.FindByEmailAsync("admin@example.com");
+        var adminConfig = _configuration.GetSection("AdminAcc") ?? throw new InvalidOperationException("AdminAcc Not found");
+        string adminEmail = adminConfig["Email"] ?? throw new InvalidOperationException("Email Of AdminAcc Not found");
+        string adminUserName = adminConfig["UserName"] ?? throw new InvalidOperationException("UserName Of AdminAcc Not found");
+        string adminPassword = adminConfig["Password"] ?? throw new InvalidOperationException("Password Of AdminAcc Not found");
+
+        var adminUser = await _userManager.FindByEmailAsync(adminEmail);
         if (adminUser == null)
         {
             adminUser = new AppUser
             {
-                UserName = "admin",
-                Email = "admin@example.com"
+                UserName = adminUserName,
+                Email = adminEmail
             };
-            var result = await _userManager.CreateAsync(adminUser, "Admin@123");
+            var result = await _userManager.CreateAsync(adminUser, adminPassword);
 
             if (result.Succeeded)
             {
