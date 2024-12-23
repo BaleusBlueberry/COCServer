@@ -5,6 +5,7 @@ using COCServer.Startup.Seeder;
 using DLA.Interface;
 using DLA.Models;
 using DLA.Repository;
+using DLA.SeedData;
 using DLA.Servises;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -78,8 +79,7 @@ namespace COCServer
                             "http://localhost:3000",
                             "http://localhost:5173",
                             "http://localhost:5174",
-                            "https://testwebsite.pleasecuddle.me",
-                            /*host*/
+                            "https://testwebsite.pleasecuddle.me"
                         ])
                         .AllowAnyHeader()
                         .AllowAnyMethod()
@@ -92,6 +92,8 @@ namespace COCServer
             builder.Logging.AddDebug();
 
             var app = builder.Build();
+
+            app.UseCors(corsPolicy);
 
             await DataSeeder.SeedDataAsync(app);
             // Configure the HTTP request pipeline.

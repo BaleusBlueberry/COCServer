@@ -4,6 +4,7 @@ using COCServer.Startup.JWT;
 using DLA.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver.Linq;
 
 namespace COCServer.Controllers;
 
@@ -28,6 +29,10 @@ public class AuthController : ControllerBase
     {
         if (ModelState.IsValid)
         {
+            var user = await _userManager.Users.AnyAsync(p => p.Email == registerDto.Email || p.UserName == registerDto.UserName);
+
+            if (user) return Conflict("User Already Exists");
+
             var result = await _userManager.CreateAsync(registerDto.ToUser(), registerDto.Password);
 
             if (result.Succeeded)

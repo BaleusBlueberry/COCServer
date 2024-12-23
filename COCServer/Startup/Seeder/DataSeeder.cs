@@ -10,12 +10,12 @@ public static class DataSeeder
 
             try
             {
-                var seeder = services.GetRequiredService<Seeder>();
+                var seeder = services.GetRequiredService<DLA.SeedData.Seeder>();
                 await seeder.SeedRolesAndUsersAsync();
             }
             catch (Exception ex)
             {
-                var logger = services.GetRequiredService<ILogger<Seeder>>(); // Use a real type here
+                var logger = services.GetRequiredService<ILogger<DLA.SeedData.Seeder>>(); // Use a real type here
                 logger.LogError(ex, "An error occurred while seeding roles and users.");
             }
         }
