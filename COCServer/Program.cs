@@ -1,13 +1,23 @@
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using AspNetCore.Identity.Mongo;
 using COCServer.Startup.JWT;
+using COCServer.Startup.SeedData;
 using COCServer.Startup.Seeder;
 using DLA.Interface;
 using DLA.Models;
+using DLA.Models.BuildingModels.DefensiveBuildingsModels;
+using DLA.Models.BuildingModels.OtherBuildingsModels;
+using DLA.Models.BuildingModels.ResourceBuildingsModels;
+using DLA.Models.BuildingModels.TrapBuildingsModels;
+using DLA.Models.TownHallModels;
 using DLA.Repository;
-using DLA.SeedData;
-using DLA.Servises;
+using DLA.Repository.BuildingsRepositories;
+using DLA.Repository.TownHallRepository;
+using DLA.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
 namespace COCServer
@@ -24,14 +34,26 @@ namespace COCServer
 
             builder.Services.AddSingleton<IRepository<TownHallLevels>, TownHallRepositoryMongo>();
 
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddSingleton<IRepository<TrapBuildingsModel>, TrapBuildingsRepository>();
+            builder.Services.AddSingleton<IRepository<ResourceBuildingsModel>, ResourceBuildingsRepository>();
+            builder.Services.AddSingleton<IRepository<OtherBuildingsModel>, OtherBuildingsRepository>();
+            builder.Services.AddSingleton<IRepository<DefensiveBuildingsModel>, DefensiveBuildingsRepository>();
+
+
+            builder.Services.AddControllersWithViews()
+                .AddJsonOptions(options =>
+                {
+                    // Add support for case-insensitive enum mapping
+                    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
+                    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                });
 
             builder.Services.AddIdentityMongoDbProvider<AppUser, AppRole>(identityOptions =>
             {
                 identityOptions.Password.RequiredLength = 8;
                 identityOptions.User.RequireUniqueEmail = true;
                 identityOptions.Password.RequireDigit = true;
-                identityOptions.Password.RequireNonAlphanumeric = true;  // Requires at least one special character
+                identityOptions.Password.RequireNonAlphanumeric = true; // Requires at least one special character
                 identityOptions.Password.RequireUppercase = true;
                 identityOptions.Password.RequireLowercase = true;
 
@@ -50,15 +72,22 @@ namespace COCServer
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
+
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"] ?? throw new InvalidOperationException("jwt string jwtSettings[\"SecretKey\"] not found.")))
+                    ValidIssuer = jwtSettings["Issuer"],
+                    ValidAudience = jwtSettings["Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"] ?? throw new InvalidOperationException("jwt string jwtSettings[\"SecretKey\"] not found."))),
+                    ValidateLifetime = true
                 };
+                options.IncludeErrorDetails = true;
             });
 
-            builder.Services.AddScoped<JwtService>();
-
             builder.Services.AddScoped<Seeder>();
+
+            builder.Services.AddScoped<TownHallSeeder>();
+
+            builder.Services.AddScoped<JwtService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -75,21 +104,26 @@ namespace COCServer
             {
                 options.AddPolicy(name: corsPolicy, policy =>
                 {
-                    policy.WithOrigins([
-                            "http://localhost:3000",
-                            "http://localhost:5173",
-                            "http://localhost:5174",
-                            "https://testwebsite.pleasecuddle.me"
-                        ])
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials();
+                    options.AddPolicy(name: corsPolicy, policy =>
+                    {
+                        var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>() ??
+                                             new string[] { "http://localhost:3000", "http://localhost:5173" }; // Default to local origins
+                        policy.WithOrigins(allowedOrigins)
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowCredentials();
+                    });
                 });
             });
 
             builder.Logging.ClearProviders();
-            builder.Logging.AddConsole(); // Add console logging
             builder.Logging.AddDebug();
+            builder.Logging.AddConsole(); // Add console logging
+            
+
+            builder.Logging.SetMinimumLevel(builder.Environment.IsDevelopment()
+                ? LogLevel.Debug
+                : LogLevel.Information);
 
             var app = builder.Build();
 
@@ -105,20 +139,20 @@ namespace COCServer
             //}
             if (builder.Environment.IsDevelopment())
             {
-                app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
+                app.UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                     options.RoutePrefix = string.Empty;
+                    
                 });
+                app.UseSwagger();
             }
-            app.UseSwagger();
-            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.MapControllers();
 
