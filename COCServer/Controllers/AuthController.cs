@@ -11,29 +11,19 @@ namespace COCServer.Controllers;
 
 [Route("API/[controller]")]
 [ApiController]
-public class AuthController : ControllerBase
+public class AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, JwtService jwtService, RoleManager<AppRole> roleManager, ILogger<AuthController> logger) : ControllerBase
 {
-    private readonly UserManager<AppUser> _userManager;
-    private readonly SignInManager<AppUser> _signInManager;
-    private readonly RoleManager<AppRole> roleManager;
-    private readonly JwtService jwtService;
-
-    public AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
-    {
-        _userManager = userManager;
-        _signInManager = signInManager;
-    }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
     {
         if (ModelState.IsValid)
         {
-            var user = await _userManager.Users.AnyAsync(p => p.Email == registerDto.Email || p.UserName == registerDto.UserName);
+            var user = await userManager.Users.AnyAsync(p => p.Email == registerDto.Email || p.UserName == registerDto.UserName);
 
             if (user) return Conflict("User Already Exists");
 
-            var result = await _userManager.CreateAsync(registerDto.ToUser(), registerDto.Password);
+            var result = await userManager.CreateAsync(registerDto.ToUser(), registerDto.Password);
 
             if (result.Succeeded)
             {
@@ -50,20 +40,27 @@ public class AuthController : ControllerBase
         if (ModelState.IsValid)
         {
 
-            AppUser user = await _userManager.FindByEmailAsync(loginDto.Email);
+            AppUser user = await userManager.FindByEmailAsync(loginDto.Email);
 
             if (user is null || user.UserName is null)
             {
                 return Unauthorized();
             }
 
-            bool result = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+            bool result = await userManager.CheckPasswordAsync(user, loginDto.Password);
 
             if (result)
             {
-                await _signInManager.SignInAsync(user, isPersistent: true);
+                await signInManager.SignInAsync(user, isPersistent: true);
 
                 string token = await jwtService.CreateToken(user);
+
+                var roles = await userManager.GetRolesAsync(user);
+
+                foreach (var role in roles)
+                {
+                    logger.LogDebug(role);
+                }
 
                 return Ok(new { token });
             }
