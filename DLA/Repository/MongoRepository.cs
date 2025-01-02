@@ -6,9 +6,9 @@ using MongoDB.Driver;
 
 namespace DLA.Repository
 {
-    public class MongoRepository<T>(IMongoService mongo) : IRepository<T> where T : IEntity
+    public class MongoRepository<T>(IMongoService mongo, string collectionName) : IRepository<T> where T : IEntity
     {
-        protected readonly IMongoCollection<T> _collection = mongo.GetCollection<T>(typeof(T).Name.Pluralize());
+        protected readonly IMongoCollection<T> _collection = mongo.GetCollection<T>(collectionName);
 
         public virtual async Task Add(T item)
         {
@@ -25,7 +25,6 @@ namespace DLA.Repository
             var items = await _collection.FindAsync(i => true);
             return await items.ToListAsync();
         }
-
 
         public virtual async Task<IEnumerable<T>> FindAll(Expression<Func<T, bool>> predicate)
         {
@@ -57,6 +56,12 @@ namespace DLA.Repository
         public virtual async Task Delete(Expression<Func<T, bool>> predicate)
         {
             await _collection.DeleteManyAsync(predicate);
+        }
+
+        public virtual async Task DropCollectionAsync()
+        {
+            var database = _collection.Database;
+            await database.DropCollectionAsync(_collection.CollectionNamespace.CollectionName);
         }
     }
 }

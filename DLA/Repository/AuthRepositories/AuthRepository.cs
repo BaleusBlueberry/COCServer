@@ -2,13 +2,12 @@
 using DLA.Models;
 using MongoDB.Driver;
 
-namespace DLA.Repository;
+namespace DLA.Repository.AuthRepositories;
 
 public class AuthRepository : MongoAuthRepository<AppUser>
 {
     public AuthRepository(IMongoService mongo) : base(mongo)
     {
-
     }
     public async Task<AppUser?> FindByEmail(string email)
     {

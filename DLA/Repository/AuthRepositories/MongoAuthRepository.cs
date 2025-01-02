@@ -3,7 +3,7 @@ using MongoDB.Driver;
 using System.Linq.Expressions;
 using DLA.Interface;
 
-namespace DLA.Repository
+namespace DLA.Repository.AuthRepositories
 {
     public class MongoAuthRepository<T>(IMongoService mongo)
     {

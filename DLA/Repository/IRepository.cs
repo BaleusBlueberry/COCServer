@@ -22,5 +22,7 @@ namespace DLA.Repository
         Task Delete(T entity);
 
         Task Delete(Expression<Func<T, bool>> predicate);
+
+        Task DropCollectionAsync();
     }
 }
