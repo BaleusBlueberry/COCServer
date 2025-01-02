@@ -1,12 +1,13 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using COCServer.Controllers;
 using DLA.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
 namespace COCServer.Startup.JWT;
-public class JwtService(IConfiguration configuration, UserManager<AppUser> userManager)
+public class JwtService(IConfiguration configuration, UserManager<AppUser> userManager, ILogger<AuthController> logger)
 {
     public async Task<string> CreateToken(AppUser user)
     {
@@ -23,7 +24,7 @@ public class JwtService(IConfiguration configuration, UserManager<AppUser> userM
 
         if (isAdmin)
         {
-            claims.Add(new Claim(ClaimTypes.Role, "admin"));
+            claims.Add(new Claim(ClaimTypes.Role, "Admin"));
         }
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
@@ -36,9 +37,11 @@ public class JwtService(IConfiguration configuration, UserManager<AppUser> userM
             audience: jwtSettings["Audience"],
             signingCredentials: creds
         );
+        logger.LogDebug("issuer: " + jwtSettings["Issuer"]);
+        logger.LogDebug("Audience: " + jwtSettings["Audience"]);
 
         string jwt = new JwtSecurityTokenHandler().WriteToken(token);
-
+        logger.LogDebug("Generated JWT Token: " + jwt);
         return jwt;
     }
 }
