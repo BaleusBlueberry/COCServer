@@ -1,4 +1,6 @@
-﻿namespace COCServer.Startup.Seeder;
+﻿using COCServer.Startup.SeedData;
+
+namespace COCServer.Startup.Seeder;
 
 public static class DataSeeder
 {
@@ -10,12 +12,14 @@ public static class DataSeeder
 
             try
             {
-                var seeder = services.GetRequiredService<DLA.SeedData.Seeder>();
-                await seeder.SeedRolesAndUsersAsync();
+                var townHallSeeder = services.GetRequiredService<TownHallSeeder>();
+                var authSeeder = services.GetRequiredService<SeedData.Seeder>();
+                await authSeeder.SeedRolesAndUsersAsync();
+                await townHallSeeder.SeedDataAsync();
             }
             catch (Exception ex)
             {
-                var logger = services.GetRequiredService<ILogger<DLA.SeedData.Seeder>>(); // Use a real type here
+                var logger = services.GetRequiredService<ILogger<SeedData.Seeder>>(); // Use a real type here
                 logger.LogError(ex, "An error occurred while seeding roles and users.");
             }
         }

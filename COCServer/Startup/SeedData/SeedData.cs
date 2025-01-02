@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.Configuration;
 
-namespace DLA.SeedData;
+namespace COCServer.Startup.SeedData;
 
 public class Seeder
 {
