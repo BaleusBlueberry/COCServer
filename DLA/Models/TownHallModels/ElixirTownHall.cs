@@ -19,6 +19,7 @@ public class ElixirTownHall {
     public int DragonRider { get; set; } = 0;
     public int ElectroTitan { get; set; } = 0;
     public int RootRider { get; set; } = 0;
+    public int Thrower { get; set; } = 0;
     public int LightningSpell { get; set; } = 0;
     public int HealingSpell { get; set; } = 0;
     public int RageSpell { get; set; } = 0;
@@ -27,4 +28,5 @@ public class ElixirTownHall {
     public int CloneSpell { get; set; } = 0;
     public int InvisibilitySpell { get; set; } = 0;
     public int RecallSpell { get; set; } = 0;
+    public int ReviveSpell { get; set; } = 0;
 }
