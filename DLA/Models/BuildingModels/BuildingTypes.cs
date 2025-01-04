@@ -3,7 +3,7 @@
     public enum BuildingTypes
     {
         None,
-        OtherBuildings,
+        ArmyBuildings,
         DefensiveBuildings,
         TrapBuildings,
         Heroes,

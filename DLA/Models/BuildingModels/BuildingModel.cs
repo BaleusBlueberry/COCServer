@@ -23,13 +23,12 @@ namespace DLA.Models.BuildingModels
         [Display(Name = "Upgrade Time")]
         public required int UpgradeTimeSeconds { get; set; }
 
-        [Required]
-        [Range(1, 10000, ErrorMessage = "Hp Must be Between 1 and 10000")]
-        public required int Hp { set; get; }
+        [Range(0, 10000, ErrorMessage = "Hp Must be Between 1 and 10000")]
+        public int? Hp { set; get; }
 
         [Required]
         [Display(Name = "Experience Gained")]
-        [Range(1, 10000, ErrorMessage = "Experience Must be Between 1 and 10000")]
+        [Range(0, 10000, ErrorMessage = "Experience Must be Between 0 and 10000")]
         public required int Experience { get; set; }
 
         [Required]

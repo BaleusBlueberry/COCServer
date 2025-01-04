@@ -9,10 +9,19 @@ namespace DLA.Models.BuildingModels.ResourceBuildingsModels
             BuildingType = BuildingTypes.ResourceBuildings;
         }
 
-        [Required]
-        public required int StorageCapacity { get; set; }
+        [Range(0, 10000000, ErrorMessage = "Gold Capacity Must be Between 0 and 10000000")]
+        public int? StorageCapacityGold { get; set; }
+
+        [Range(0, 10000000, ErrorMessage = "Elixir Capacity Must be Between 0 and 10000000")]
+        public int? StorageCapacityElixir { get; set; }
+
+        [Range(0, 400000, ErrorMessage = "Dark Elixir Capacity Must be Between 0 and 400000")]
+        public int? StorageCapacityDarkElixir { get; set; }
 
         [Display(Name = "Production Rate: Per Hour")]
-        public int ProductionRate { get; set; } = 0;
+        [Range(0, 10000, ErrorMessage = "Production Rate Must be Between 0 and 10000")]
+        public int? ProductionRate { get; set; }
+
+
     }
 }

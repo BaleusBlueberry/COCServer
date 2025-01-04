@@ -7,7 +7,7 @@ namespace DLA.Models.TownHallModels;
 
 public class TownHallData
 {
-    public OtherBuildingsTownHall OtherBuildings { get; set; } = new OtherBuildingsTownHall();
+    public ArmyBuildingsTownHall ArmyBuildings { get; set; } = new ArmyBuildingsTownHall();
     public DefensiveBuildingsTownHall DefensiveBuildings { get; set; } = new DefensiveBuildingsTownHall();
     public TrapBuildingsTownHall TrapBuildings { get; set; } = new TrapBuildingsTownHall();
     public HeroesTownHall Heroes { get; set; } = new HeroesTownHall();

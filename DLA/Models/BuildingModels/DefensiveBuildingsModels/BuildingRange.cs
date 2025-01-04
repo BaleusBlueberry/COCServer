@@ -6,6 +6,6 @@ namespace DLA.Models.BuildingModels.DefensiveBuildingsModels
     {
         [Required]
         public required float MaxRange { get; set; }
-        public float MinRange { get; set; } = 0;
+        public float? MinRange { get; set; }
     }
 }

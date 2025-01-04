@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DLA.Models.TownHallModels;
 
-public class OtherBuildingsTownHall
+public class ArmyBuildingsTownHall
 {
     public int ArmyCamp { get; set; } = 0;
 
