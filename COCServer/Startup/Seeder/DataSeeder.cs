@@ -12,10 +12,12 @@ public static class DataSeeder
 
             try
             {
-                var townHallSeeder = services.GetRequiredService<TownHallSeeder>();
+                var townHallSeederr = scope.ServiceProvider.GetRequiredService<TownHallSeeder>();
+                await townHallSeederr.SeedDataAsync("TownHallLevelSeed.json");
+
                 var authSeeder = services.GetRequiredService<SeedData.Seeder>();
+
                 await authSeeder.SeedRolesAndUsersAsync();
-                await townHallSeeder.SeedDataAsync();
             }
             catch (Exception ex)
             {

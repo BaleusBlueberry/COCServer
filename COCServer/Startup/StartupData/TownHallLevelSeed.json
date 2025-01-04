@@ -3,7 +3,7 @@
     "Level": 1,
     "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fd/Town_Hall1.png",
     "Data": {
-      "OtherBuildings": {
+      "ArmyBuildings": {
         "ArmyCamp": 1,
         "Barracks": 3,
         "DarkBarracks": 0,
@@ -128,7 +128,7 @@
     "Level": 2,
     "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/7d/Town_Hall2.png",
     "Data": {
-      "OtherBuildings": {
+      "ArmyBuildings": {
         "ArmyCamp": 2,
         "Barracks": 4,
         "DarkBarracks": 0,
@@ -253,7 +253,7 @@
     "Level": 3,
     "Picture": "https://static.wikia.nocookie.net/clashofclans/images/d/dd/Town_Hall3.png",
     "Data": {
-      "OtherBuildings": {
+      "ArmyBuildings": {
         "ArmyCamp": 3,
         "Barracks": 5,
         "DarkBarracks": 0,
