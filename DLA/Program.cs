@@ -1,6 +1,5 @@
 ﻿using DLA.Interface;
 using DLA.Repository;
-using DLA.Servises;
 using DLA.Models.TownHallModels;
 
 namespace DLA
