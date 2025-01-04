@@ -7,8 +7,8 @@ using COCServer.Startup.SeedData;
 using COCServer.Startup.Seeder;
 using DLA.Interface;
 using DLA.Models;
+using DLA.Models.BuildingModels.ArmyBuildingsModels;
 using DLA.Models.BuildingModels.DefensiveBuildingsModels;
-using DLA.Models.BuildingModels.OtherBuildingsModels;
 using DLA.Models.BuildingModels.ResourceBuildingsModels;
 using DLA.Models.BuildingModels.TrapBuildingsModels;
 using DLA.Models.TownHallModels;
@@ -36,9 +36,8 @@ namespace COCServer
 
             builder.Services.AddSingleton<IRepository<TrapBuildingsModel>, TrapBuildingsRepository>();
             builder.Services.AddSingleton<IRepository<ResourceBuildingsModel>, ResourceBuildingsRepository>();
-            builder.Services.AddSingleton<IRepository<OtherBuildingsModel>, OtherBuildingsRepository>();
+            builder.Services.AddSingleton<IRepository<ArmyBuildingsModel>, ArmyBuildingsRepository>();
             builder.Services.AddSingleton<IRepository<DefensiveBuildingsModel>, DefensiveBuildingsRepository>();
-
 
             builder.Services.AddControllersWithViews()
                 .AddJsonOptions(options =>
@@ -89,6 +88,8 @@ namespace COCServer
 
             builder.Services.AddScoped<JwtService>();
 
+            builder.Services.AddScoped<BuildingService>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -104,15 +105,11 @@ namespace COCServer
             {
                 options.AddPolicy(name: corsPolicy, policy =>
                 {
-                    options.AddPolicy(name: corsPolicy, policy =>
-                    {
-                        var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>() ??
-                                             new string[] { "http://localhost:3000", "http://localhost:5173" }; // Default to local origins
-                        policy.WithOrigins(allowedOrigins)
-                            .AllowAnyHeader()
-                            .AllowAnyMethod()
-                            .AllowCredentials();
-                    });
+                    var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>();
+                    policy.WithOrigins(allowedOrigins)
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials(); // Ensure AllowCredentials is included if you're using cookies or credentials in requests
                 });
             });
 
