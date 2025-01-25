@@ -25,7 +25,7 @@ namespace COCServer.Controllers
         private readonly IRepository<TownHallLevels> _repository;
 
         // GET all
-        [HttpGet("/all")]
+        [HttpGet("all")]
         public async Task<ActionResult> GetAll()
         {
             var def = await defensiveBuildingsRepository.GetAll();
