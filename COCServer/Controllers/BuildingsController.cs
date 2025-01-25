@@ -6,7 +6,10 @@ using DLA.Models.BuildingModels.TrapBuildingsModels;
 using DLA.Models.TownHallModels;
 using DLA.Repository;
 using DLA.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
+using MongoDB.Driver.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -68,20 +71,20 @@ namespace COCServer.Controllers
         [HttpGet("TrapBuildings")]
         public async Task<ActionResult> GetTrapBuildings() =>
             await buildingService.GetBuildings(trapBuildingsRepository, "Trap Buildings");
-
+        [Authorize(Roles = "Admin")]
         //POST
         [HttpPost("DefensiveBuildings")]
         public async Task<ActionResult> CreateDefensiveBuildings(DefensiveBuildingsModel model) =>
             await CreateBuilding(defensiveBuildingsRepository, model, BuildingTypes.DefensiveBuildings, "Defensive Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPost("ArmyBuildings")]
         public async Task<ActionResult> CreateArmyBuildings(ArmyBuildingsModel model) =>
             await CreateBuilding(armyBuildingsRepository, model, BuildingTypes.ArmyBuildings, "Army Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPost("ResourceBuildings")]
         public async Task<ActionResult> CreateResourceBuildings(ResourceBuildingsModel model) =>
             await CreateBuilding(resourceBuildingsRepository, model, BuildingTypes.ResourceBuildings, "Resource Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPost("TrapBuildings")]
         public async Task<ActionResult> CreateTrapBuildings(TrapBuildingsModel model) =>
             await CreateBuilding(trapBuildingsRepository, model, BuildingTypes.TrapBuildings, "Trap Building");
@@ -122,38 +125,38 @@ namespace COCServer.Controllers
         public async Task<ActionResult> GetByLevelTrapBuilding(int level) =>
             await buildingService.GetBuildingsByLevel(trapBuildingsRepository, level, "Trap Buildings");
 
-
+        [Authorize(Roles = "Admin")]
         // PUT 
         [HttpPut("DefensiveBuildings/Edit/{id}")]
         public async Task<ActionResult> UpdateDefensiveBuildings(string id, [FromBody] DefensiveBuildingsModel model) =>
             await UpdateBuilding(defensiveBuildingsRepository, id, model, "Defensive Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPut("ArmyBuildings/Edit/{id}")]
         public async Task<ActionResult> UpdateArmyBuilding(string id, [FromBody] ArmyBuildingsModel model) =>
             await UpdateBuilding(armyBuildingsRepository, id, model, "Army Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPut("ResourceBuildings/Edit/{id}")]
         public async Task<ActionResult> UpdateResourceBuilding(string id, [FromBody] ResourceBuildingsModel model) =>
             await UpdateBuilding(resourceBuildingsRepository, id, model, "Resource Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpPut("TrapBuildings/Edit/{id}")]
         public async Task<ActionResult> UpdateTrapBuilding(string id, [FromBody] TrapBuildingsModel model) =>
             await UpdateBuilding(trapBuildingsRepository, id, model, "Trap Building");
 
-
+        [Authorize(Roles = "Admin")]
         // DELETE 
         [HttpDelete("DefensiveBuildings/Delete/{id}")]
         public async Task<ActionResult> DeleteDefensiveBuilding(string id) =>
             await buildingService.DeleteBuilding(defensiveBuildingsRepository, id, "Defensive Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete("ArmyBuildings/Delete/{id}")]
         public async Task<ActionResult> DeleteArmyBuilding(string id) =>
             await buildingService.DeleteBuilding(armyBuildingsRepository, id, "Army Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete("ResourceBuildings/Delete/{id}")]
         public async Task<ActionResult> DeleteResourceBuilding(string id) =>
             await buildingService.DeleteBuilding(resourceBuildingsRepository, id, "Resource Building");
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete("TrapBuildings/Delete/{id}")]
         public async Task<ActionResult> DeleteTrapBuilding(string id) =>
             await buildingService.DeleteBuilding(trapBuildingsRepository, id, "Trap Building");
@@ -167,7 +170,7 @@ namespace COCServer.Controllers
             try
             {
                 // Check if a building with the same level already exists
-                var alreadyExists = await repository.FindOne(b => b.Level == model.Level);
+                var alreadyExists = await repository.FindOne((b) => b.Name == model.Name && b.Level == model.Level);
                 if (alreadyExists != null)
                     return BadRequest($"{buildingTypeName} with Level {model.Level} already exists.");
 
