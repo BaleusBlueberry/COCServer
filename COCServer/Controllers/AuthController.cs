@@ -2,9 +2,11 @@
 using COCServer.DTOs.Extensions;
 using COCServer.Startup.JWT;
 using DLA.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver.Linq;
+using System.Security.Claims;
 
 namespace COCServer.Controllers;
 
@@ -62,10 +64,170 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                     logger.LogDebug(role);
                 }
 
-                return Ok(new { token });
+                return Ok(new { token, roles });
             }
             return Unauthorized();
         }
         return BadRequest(ModelState);
     }
+
+    [HttpPut("Update")]
+    [Authorize]
+    public async Task<IActionResult> Update([FromBody] UpdateUserDto updateDto)
+    {
+        if (ModelState.IsValid)
+        {
+            // Get the currently logged-in user
+            AppUser? currentUser = await userManager.GetUserAsync(User);
+            if (currentUser == null) return Unauthorized("User not authenticated.");
+
+            // Check if the current user is an admin
+            var isAdmin = await userManager.IsInRoleAsync(currentUser, "Admin");
+
+            // Ensure the user can only update their own account unless they are an admin
+            if (currentUser.Id.ToString() != updateDto.UserId && !isAdmin)
+            {
+                return Forbid("You are not authorized to update this user.");
+            }
+
+            AppUser? userToUpdate = isAdmin ? await userManager.FindByIdAsync(updateDto.UserId) : currentUser;
+
+
+            if (userToUpdate == null) return NotFound("User not found.");
+
+            // Update email user
+            userToUpdate.Email = updateDto.Email ?? userToUpdate.Email;
+            userToUpdate.UserName = updateDto.UserName ?? userToUpdate.UserName;
+
+
+            // Handle password updates if provided
+            if (!string.IsNullOrEmpty(updateDto.NewPassword))
+            {
+                // Verify current password if the updater is not an admin
+                if (!isAdmin)
+                {
+                    if (!string.IsNullOrEmpty(updateDto.CurrentPassword)) return BadRequest("Current password Not Provided");
+                    
+                    var passwordCheck = await signInManager.CheckPasswordSignInAsync(currentUser, updateDto.CurrentPassword, false);
+                    if (!passwordCheck.Succeeded)
+                    {
+                        return Unauthorized("Current password is incorrect.");
+                    }
+                }
+
+                var resetToken = await userManager.GeneratePasswordResetTokenAsync(userToUpdate);
+                var passwordUpdateResult = await userManager.ResetPasswordAsync(userToUpdate, resetToken, updateDto.NewPassword);
+
+                if (!passwordUpdateResult.Succeeded)
+                {
+                    return BadRequest(passwordUpdateResult.Errors);
+                }
+            }
+
+            var result = await userManager.UpdateAsync(userToUpdate);
+            if (result.Succeeded)
+            {
+                await signInManager.SignInAsync(userToUpdate, isPersistent: true);
+
+                string token = await jwtService.CreateToken(userToUpdate);
+
+                var roles = await userManager.GetRolesAsync(userToUpdate);
+
+                foreach (var role in roles)
+                {
+                    logger.LogDebug(role);
+                }
+
+                return Ok(new { token, roles });
+                
+            }
+
+            return BadRequest(result.Errors);
+        }
+        return BadRequest(ModelState);
+    }
+
+    [HttpPut("UpdateFavorites")]
+    [Authorize]
+    public async Task<IActionResult> UpdateFavorites([FromBody] UpdateFavorites updateDto)
+    {
+        if (ModelState.IsValid)
+        {
+            AppUser? currentUser = await userManager.GetUserAsync(User);
+        if (currentUser == null) return Unauthorized("User not authenticated.");
+
+        // Check if the current user is an admin
+        var isAdmin = await userManager.IsInRoleAsync(currentUser, "Admin");
+
+        // Ensure the user can only update their own account unless they are an admin
+        if (currentUser.Id.ToString() != updateDto.UserId && !isAdmin)
+        {
+            return Forbid("You are not authorized to update this user.");
+        }
+
+        AppUser? userToUpdate = isAdmin ? await userManager.FindByIdAsync(updateDto.UserId) : currentUser;
+        if (userToUpdate == null) return NotFound("User not found.");
+
+        // Update email user
+        userToUpdate.FavoriteBuildings = updateDto.FavoriteBuildings ?? userToUpdate.FavoriteBuildings;
+        userToUpdate.FavoriteTownHalls = updateDto.FavoriteTownHalls ?? userToUpdate.FavoriteTownHalls;
+
+        var result = await userManager.UpdateAsync(userToUpdate);
+        if (result.Succeeded)
+        {
+            return Ok("User updated successfully.");
+        }
+
+        return BadRequest(result.Errors);
+        }
+        return BadRequest(ModelState);
+    }
+
+
+
+    [Authorize(Roles = "Admin")]
+    [HttpPost("migrate-users")]
+    public async Task<IActionResult> MigrateUsers()
+    {
+        try
+        {
+            var users = userManager.Users.ToList(); // Fetch all users
+
+            foreach (var user in users)
+            {
+                bool isUpdated = false;
+
+                // Check and set default for FavoriteTownHall
+                if (user.FavoriteTownHalls == null)
+                {
+                    user.FavoriteTownHalls = new List<string>();
+                    isUpdated = true;
+                }
+
+                // Check and set default for FavoriteBuildings
+                if (user.FavoriteBuildings == null)
+                {
+                    user.FavoriteBuildings = new List<string>();
+                    isUpdated = true;
+                }
+
+                if (isUpdated)
+                {
+                    var result = await userManager.UpdateAsync(user);
+                    if (!result.Succeeded)
+                    {
+                        logger.LogError($"Failed to update user {user.UserName}: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                    }
+                }
+            }
+
+            return Ok("Migration completed successfully.");
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Error during migration.");
+            return StatusCode(500, "An error occurred during migration.");
+        }
+    }
 }
+

@@ -14,8 +14,10 @@ public class JwtService(IConfiguration configuration, UserManager<AppUser> userM
         var jwtSettings = configuration.GetSection("JwtSettings");
         var secretKey = jwtSettings["SecretKey"] ??
                         throw new Exception("Secret key must be set up in app settings");
+
         var claims = new List<Claim>()
         {
+            new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString()),
             new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
             new Claim(JwtRegisteredClaimNames.Email, user.Email),
         };

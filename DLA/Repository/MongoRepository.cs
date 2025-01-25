@@ -1,7 +1,10 @@
 ﻿using System.Linq.Expressions;
 using DLA.Interface;
 using DLA.Models;
+using DLA.Services;
 using Humanizer;
+using Microsoft.AspNetCore.Http.HttpResults;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace DLA.Repository
@@ -17,7 +20,9 @@ namespace DLA.Repository
 
         public virtual async Task<T>? GetById(string id)
         {
-            return await _collection.Find(i => i.Id == id).FirstOrDefaultAsync();
+            if (!IsValidObjectId.IsValidId(id)) return default(T);
+            else return await _collection.Find(i => i.Id == id).FirstOrDefaultAsync();
+            
         }
 
         public virtual async Task<IEnumerable<T>> GetAll()

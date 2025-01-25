@@ -17,6 +17,7 @@ using DLA.Repository.BuildingsRepositories;
 using DLA.Repository.TownHallRepository;
 using DLA.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
@@ -144,6 +145,24 @@ namespace COCServer
                 });
                 app.UseSwagger();
             }
+            app.UseExceptionHandler(errorApp =>
+            {
+                errorApp.Run(async context =>
+                {
+                    context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+                    context.Response.ContentType = "application/json";
+
+                    var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+                    if (contextFeature != null)
+                    {
+                        await context.Response.WriteAsync(new
+                        {
+                            StatusCode = context.Response.StatusCode,
+                            Message = "An unexpected error occurred. Please try again later."
+                        }.ToString());
+                    }
+                });
+            });
 
             app.UseHttpsRedirection();
             app.UseRouting();
