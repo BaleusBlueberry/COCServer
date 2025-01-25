@@ -1,7 +1,10 @@
-﻿using DLA.Models.TownHallModels;
+﻿using System.Diagnostics;
+using DLA.Models.BuildingModels;
+using DLA.Models.TownHallModels;
 using DLA.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol.Core.Types;
 
 namespace COCServer.Controllers
 {
@@ -24,11 +27,27 @@ namespace COCServer.Controllers
             return Ok(allItems);
         }
 
-        // GET: api/townHall/Details/5
+        
+        [HttpGet("level/{level}")]
+        public async Task<ActionResult> GetLevel(int level)
+        {
+            if (level < 1)
+                return BadRequest("Level must be a positive integer.");
+
+            var buildings = await _repository.FindOne(b => b.Level == level);
+
+            if (buildings == null)
+                return new NotFoundObjectResult($"No townHall found with Level {level}.");
+
+            return new OkObjectResult(buildings);
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult> Details(string id)
         {
             // Replace with actual logic to get town hall details
+            if (id == "") return BadRequest();
+
             var townHall = await _repository.GetById(id);
             if (townHall == null)
             {
@@ -46,6 +65,12 @@ namespace COCServer.Controllers
             {
                 try
                 {
+                    var existingTownHall = await _repository.FindOne(level => townHall.Level == level.Level);
+                    if (existingTownHall != null)
+                    {
+                        return BadRequest($"Town Hall with level {townHall.Level} already exits.");
+                    }
+
                     await _repository.Add(townHall);
                     return Created($"/townHall/{townHall.Id}", townHall);
                 }
