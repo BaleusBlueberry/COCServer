@@ -18,7 +18,7 @@ namespace DLA.Models.BuildingModels.TrapBuildingsModels
     public class DamageTrapInfo
     {
         public DamageType DamageType { get; set; } = DamageType.None;
-        public float? DamageRadius { get; set; }
-        public int? Damage { get; set; }
+        public float DamageRadius { get; set; }
+        public int Damage { get; set; }
     }
 }
