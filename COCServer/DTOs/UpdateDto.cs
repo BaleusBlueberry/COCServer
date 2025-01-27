@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using DLA.Models.UserData;
+using System.ComponentModel.DataAnnotations;
 
 namespace COCServer.DTOs
 {
@@ -27,7 +28,7 @@ namespace COCServer.DTOs
         [Required]
         public required string UserId { get; set; }
 
-        public List<string>? FavoriteBuildings { get; set; }
-        public List<string>? FavoriteTownHalls { get; set; }
+        public List<string> FavoriteTownHalls { get; set; } = new List<string>();
+        public FavoriteBuildingsModel FavoriteBuildings { get; set; } = new FavoriteBuildingsModel();
     }
 }

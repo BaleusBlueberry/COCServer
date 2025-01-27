@@ -1,15 +1,16 @@
 ﻿using DLA.Models;
+using DLA.Models.UserData;
 
 namespace COCServer.DTOs.Extensions
 {
     public static class RegisterDtoExtensions
     {
-        public static AppUser ToUser(this RegisterDto Dto)
+        public static FavoriteBuildingsAndTownHallModel ToFavorites(this AppUser user)
         {
-            return new AppUser
+            return new FavoriteBuildingsAndTownHallModel
             {
-                Email = Dto.Email,
-                UserName = Dto.UserName
+                FavoriteTownHalls = user.FavoriteTownHalls,
+                FavoriteBuildings = user.FavoriteBuildings
             };
         }
     }
