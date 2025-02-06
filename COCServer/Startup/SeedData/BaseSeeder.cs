@@ -1,6 +1,5 @@
 ﻿using DLA.Models;
 using DLA.Repository;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Newtonsoft.Json;
 
 namespace COCServer.Startup.SeedData

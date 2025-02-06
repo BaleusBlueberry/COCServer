@@ -15,8 +15,10 @@ public static class DataSeeder
                 var townHallSeederr = scope.ServiceProvider.GetRequiredService<TownHallSeeder>();
                 await townHallSeederr.SeedDataAsync("TownHallLevelSeed.json");
 
-                var authSeeder = services.GetRequiredService<SeedData.Seeder>();
+                var DefensiveBuildingSeeder = scope.ServiceProvider.GetRequiredService<DefensiveBuildingsSeeder>();
+                await DefensiveBuildingSeeder.SeedDataAsync("DefensiveBuildingsSeed.json");
 
+                var authSeeder = services.GetRequiredService<SeedData.Seeder>();
                 await authSeeder.SeedRolesAndUsersAsync();
             }
             catch (Exception ex)

@@ -87,6 +87,8 @@ namespace COCServer
 
             builder.Services.AddScoped<TownHallSeeder>();
 
+            builder.Services.AddScoped<DefensiveBuildingsSeeder>();
+
             builder.Services.AddScoped<JwtService>();
 
             builder.Services.AddScoped<BuildingService>();

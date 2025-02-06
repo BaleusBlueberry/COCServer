@@ -1,0 +1,1428 @@
+[{
+  "_id": {
+    "$oid": "6791404421476a66d119e014"
+  },
+  "Name": "Cannon",
+  "Level": 1,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 420,
+  "Experience": 3,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/a/a1/Cannon1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 250
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 7.199999809265137,
+    "DamagePerSecond": 9,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a39e28fa6a4da195f7e7b2"
+  },
+  "Name": "Cannon",
+  "Level": 2,
+  "UpgradeTimeSeconds": 60,
+  "Hp": 470,
+  "Experience": 10,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/d/dc/Cannon2.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 8.800000190734863,
+    "DamagePerSecond": 11,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a39e2dfa6a4da195f7e7b3"
+  },
+  "Name": "Cannon",
+  "Level": 3,
+  "UpgradeTimeSeconds": 600,
+  "Hp": 520,
+  "Experience": 24,
+  "TownHallLevel": 2,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/10/Cannon3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 4000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 12,
+    "DamagePerSecond": 15,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a39e30fa6a4da195f7e7b4"
+  },
+  "Name": "Cannon",
+  "Level": 4,
+  "UpgradeTimeSeconds": 2700,
+  "Hp": 570,
+  "Experience": 51,
+  "TownHallLevel": 3,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/a/a5/Cannon4.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 16000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 15.199999809265137,
+    "DamagePerSecond": 19,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a39e32fa6a4da195f7e7b5"
+  },
+  "Name": "Cannon",
+  "Level": 5,
+  "UpgradeTimeSeconds": 3600,
+  "Hp": 620,
+  "Experience": 60,
+  "TownHallLevel": 4,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/ea/Cannon5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 50000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 20,
+    "DamagePerSecond": 25,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d5e4fa6a4da195f7e7b6"
+  },
+  "Name": "Cannon",
+  "Level": 6,
+  "UpgradeTimeSeconds": 7200,
+  "Hp": 670,
+  "Experience": 84,
+  "TownHallLevel": 5,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/93/Cannon6.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 100000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 24.799999237060547,
+    "DamagePerSecond": 31,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d5e8fa6a4da195f7e7b7"
+  },
+  "Name": "Cannon",
+  "Level": 7,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 730,
+  "Experience": 120,
+  "TownHallLevel": 6,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/16/Cannon7B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 150000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 32,
+    "DamagePerSecond": 40,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d5eafa6a4da195f7e7b8"
+  },
+  "Name": "Cannon",
+  "Level": 8,
+  "UpgradeTimeSeconds": 21600,
+  "Hp": 800,
+  "Experience": 169,
+  "TownHallLevel": 7,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e6/Cannon8B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 240000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 38.400001525878906,
+    "DamagePerSecond": 48,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d5ebfa6a4da195f7e7b9"
+  },
+  "Name": "Cannon",
+  "Level": 9,
+  "UpgradeTimeSeconds": 28800,
+  "Hp": 880,
+  "Experience": 189,
+  "TownHallLevel": 8,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/9b/Cannon9B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 360000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 1
+  },
+  "DamageInfo": {
+    "DamagePerHit": 44.79999923706055,
+    "DamagePerSecond": 56,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d721fa6a4da195f7e7ba"
+  },
+  "Name": "Cannon",
+  "Level": 10,
+  "UpgradeTimeSeconds": 72000,
+  "Hp": 960,
+  "Experience": 189,
+  "TownHallLevel": 8,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/74/Cannon10B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 500000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 51.20000076293945,
+    "DamagePerSecond": 64,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d723fa6a4da195f7e7bb"
+  },
+  "Name": "Cannon",
+  "Level": 11,
+  "UpgradeTimeSeconds": 86400,
+  "Hp": 1060,
+  "Experience": 207,
+  "TownHallLevel": 9,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/8c/Cannon11B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 800000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 59.20000076293945,
+    "DamagePerSecond": 74,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d729fa6a4da195f7e7bc"
+  },
+  "Name": "Cannon",
+  "Level": 12,
+  "UpgradeTimeSeconds": 100800,
+  "Hp": 1160,
+  "Experience": 254,
+  "TownHallLevel": 10,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/5e/Cannon12B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 900000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 68,
+    "DamagePerSecond": 85,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d72afa6a4da195f7e7bd"
+  },
+  "Name": "Cannon",
+  "Level": 13,
+  "UpgradeTimeSeconds": 115200,
+  "Hp": 1260,
+  "Experience": 254,
+  "TownHallLevel": 10,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fb/Cannon13B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1700000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 76,
+    "DamagePerSecond": 95,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d84bfa6a4da195f7e7be"
+  },
+  "Name": "Cannon",
+  "Level": 14,
+  "UpgradeTimeSeconds": 129600,
+  "Hp": 1380,
+  "Experience": 328,
+  "TownHallLevel": 11,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/64/Cannon14B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 80,
+    "DamagePerSecond": 100,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d84cfa6a4da195f7e7bf"
+  },
+  "Name": "Cannon",
+  "Level": 15,
+  "UpgradeTimeSeconds": 144000,
+  "Hp": 1500,
+  "Experience": 328,
+  "TownHallLevel": 11,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4f/Cannon15B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 84,
+    "DamagePerSecond": 105,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d84dfa6a4da195f7e7c0"
+  },
+  "Name": "Cannon",
+  "Level": 16,
+  "UpgradeTimeSeconds": 172800,
+  "Hp": 1620,
+  "Experience": 509,
+  "TownHallLevel": 12,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/18/Cannon16B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 88,
+    "DamagePerSecond": 110,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d84ffa6a4da195f7e7c1"
+  },
+  "Name": "Cannon",
+  "Level": 17,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 1740,
+  "Experience": 509,
+  "TownHallLevel": 12,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/17/Cannon17B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 92,
+    "DamagePerSecond": 115,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d944fa6a4da195f7e7c2"
+  },
+  "Name": "Cannon",
+  "Level": 18,
+  "UpgradeTimeSeconds": 345600,
+  "Hp": 1870,
+  "Experience": 777,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/87/Cannon18B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 100,
+    "DamagePerSecond": 125,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d946fa6a4da195f7e7c3"
+  },
+  "Name": "Cannon",
+  "Level": 19,
+  "UpgradeTimeSeconds": 216000,
+  "Hp": 2000,
+  "Experience": 777,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/9d/Cannon19B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 108,
+    "DamagePerSecond": 135,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d947fa6a4da195f7e7c4"
+  },
+  "Name": "Cannon",
+  "Level": 20,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 2150,
+  "Experience": 905,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/71/Cannon20B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 120,
+    "DamagePerSecond": 150,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3d948fa6a4da195f7e7c5"
+  },
+  "Name": "Cannon",
+  "Level": 21,
+  "UpgradeTimeSeconds": 302400,
+  "Hp": 2250,
+  "Experience": 1069,
+  "TownHallLevel": 1,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/85/Cannon21B.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 9,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 128,
+    "DamagePerSecond": 160,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": false
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3da9cfa6a4da195f7e7c6"
+  },
+  "Name": "ArcherTower",
+  "Level": 1,
+  "UpgradeTimeSeconds": 60,
+  "Hp": 380,
+  "Experience": 7,
+  "TownHallLevel": 2,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/6e/Archer_Tower1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 5.5,
+    "DamagePerSecond": 11,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3daa0fa6a4da195f7e7c7"
+  },
+  "Name": "ArcherTower",
+  "Level": 2,
+  "UpgradeTimeSeconds": 900,
+  "Hp": 420,
+  "Experience": 30,
+  "TownHallLevel": 2,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e0/Archer_Tower2.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 7.5,
+    "DamagePerSecond": 15,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3daa1fa6a4da195f7e7c8"
+  },
+  "Name": "ArcherTower",
+  "Level": 3,
+  "UpgradeTimeSeconds": 2700,
+  "Hp": 460,
+  "Experience": 51,
+  "TownHallLevel": 3,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/9e/Archer_Tower3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 9.5,
+    "DamagePerSecond": 19,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3daa2fa6a4da195f7e7c9"
+  },
+  "Name": "ArcherTower",
+  "Level": 4,
+  "UpgradeTimeSeconds": 10800,
+  "Hp": 500,
+  "Experience": 103,
+  "TownHallLevel": 4,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/b8/Archer_Tower4.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 12.5,
+    "DamagePerSecond": 25,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dc09fa6a4da195f7e7ca"
+  },
+  "Name": "ArcherTower",
+  "Level": 5,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 540,
+  "Experience": 120,
+  "TownHallLevel": 5,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e8/Archer_Tower5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 80000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 15,
+    "DamagePerSecond": 30,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dc0bfa6a4da195f7e7cb"
+  },
+  "Name": "ArcherTower",
+  "Level": 6,
+  "UpgradeTimeSeconds": 150000,
+  "Hp": 580,
+  "Experience": 134,
+  "TownHallLevel": 5,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/70/Archer_Tower6.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 35.5,
+    "DamagePerSecond": 35,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dc0cfa6a4da195f7e7cc"
+  },
+  "Name": "ArcherTower",
+  "Level": 7,
+  "UpgradeTimeSeconds": 21600,
+  "Hp": 630,
+  "Experience": 146,
+  "TownHallLevel": 6,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/1f/Archer_Tower7.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 300000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 21,
+    "DamagePerSecond": 42,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dc0efa6a4da195f7e7cd"
+  },
+  "Name": "ArcherTower",
+  "Level": 8,
+  "UpgradeTimeSeconds": 28800,
+  "Hp": 690,
+  "Experience": 169,
+  "TownHallLevel": 7,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e2/Archer_Tower8.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 480000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 24,
+    "DamagePerSecond": 48,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dd24fa6a4da195f7e7ce"
+  },
+  "Name": "ArcherTower",
+  "Level": 9,
+  "UpgradeTimeSeconds": 60,
+  "Hp": 750,
+  "Experience": 15,
+  "TownHallLevel": 8,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4a/Archer_Tower9.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 580000
+  },
+  "BuildingRange": {
+    "MaxRange": 36000,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 28,
+    "DamagePerSecond": 56,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dd26fa6a4da195f7e7cf"
+  },
+  "Name": "ArcherTower",
+  "Level": 10,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 810,
+  "Experience": 15,
+  "TownHallLevel": 8,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/45/Archer_Tower10.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 760000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 31.5,
+    "DamagePerSecond": 63,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dd27fa6a4da195f7e7d0"
+  },
+  "Name": "ArcherTower",
+  "Level": 11,
+  "UpgradeTimeSeconds": 50400,
+  "Hp": 890,
+  "Experience": 15,
+  "TownHallLevel": 9,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/03/Archer_Tower11.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 35,
+    "DamagePerSecond": 70,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3dd28fa6a4da195f7e7d1"
+  },
+  "Name": "ArcherTower",
+  "Level": 12,
+  "UpgradeTimeSeconds": 57600,
+  "Hp": 970,
+  "Experience": 15,
+  "TownHallLevel": 10,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/f0/Archer_Tower12.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1100000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 37,
+    "DamagePerSecond": 74,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3de81fa6a4da195f7e7d2"
+  },
+  "Name": "ArcherTower",
+  "Level": 13,
+  "UpgradeTimeSeconds": 64800,
+  "Hp": 1050,
+  "Experience": 254,
+  "TownHallLevel": 10,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fb/Archer_Tower13.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 39,
+    "DamagePerSecond": 78,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3de82fa6a4da195f7e7d3"
+  },
+  "Name": "ArcherTower",
+  "Level": 14,
+  "UpgradeTimeSeconds": 72000,
+  "Hp": 1130,
+  "Experience": 268,
+  "TownHallLevel": 11,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/2/2c/Archer_Tower14.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2200000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 41,
+    "DamagePerSecond": 82,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3de84fa6a4da195f7e7d4"
+  },
+  "Name": "ArcherTower",
+  "Level": 15,
+  "UpgradeTimeSeconds": 86400,
+  "Hp": 1230,
+  "Experience": 293,
+  "TownHallLevel": 11,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/44/Archer_Tower15.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2500000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 42.5,
+    "DamagePerSecond": 85,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3de85fa6a4da195f7e7d5"
+  },
+  "Name": "ArcherTower",
+  "Level": 16,
+  "UpgradeTimeSeconds": 129600,
+  "Hp": 1310,
+  "Experience": 360,
+  "TownHallLevel": 12,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/73/Archer_Tower16.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 3000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 45,
+    "DamagePerSecond": 90,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3def3fa6a4da195f7e7d6"
+  },
+  "Name": "ArcherTower",
+  "Level": 21,
+  "UpgradeTimeSeconds": 345600,
+  "Hp": 1800,
+  "Experience": 905,
+  "TownHallLevel": 15,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fa/Archer_Tower21.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 8000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 72.5,
+    "DamagePerSecond": 145,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3e00cfa6a4da195f7e7d7"
+  },
+  "Name": "ArcherTower",
+  "Level": 17,
+  "UpgradeTimeSeconds": 172800,
+  "Hp": 1390,
+  "Experience": 509,
+  "TownHallLevel": 12,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fd/Archer_Tower17.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 3500000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 50,
+    "DamagePerSecond": 100,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3e00efa6a4da195f7e7d8"
+  },
+  "Name": "ArcherTower",
+  "Level": 18,
+  "UpgradeTimeSeconds": 216000,
+  "Hp": 1510,
+  "Experience": 777,
+  "TownHallLevel": 13,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/6f/Archer_Tower18.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 4000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 55,
+    "DamagePerSecond": 110,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3e00ffa6a4da195f7e7d9"
+  },
+  "Name": "ArcherTower",
+  "Level": 19,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 1600,
+  "Experience": 777,
+  "TownHallLevel": 13,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/49/Archer_Tower19.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 4500000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 60,
+    "DamagePerSecond": 120,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3e011fa6a4da195f7e7da"
+  },
+  "Name": "ArcherTower",
+  "Level": 20,
+  "UpgradeTimeSeconds": 302400,
+  "Hp": 1700,
+  "Experience": 905,
+  "TownHallLevel": 14,
+  "BuildingType": 2,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/3/34/Archer_Tower20.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 6000000
+  },
+  "BuildingRange": {
+    "MaxRange": 10,
+    "MinRange": 0
+  },
+  "DamageInfo": {
+    "DamagePerHit": 67.5,
+    "DamagePerSecond": 135,
+    "ShockwaveDamage": 0,
+    "BurstsFire": 0,
+    "DamageWhenDestroyed": 0,
+    "PushStrength": 0,
+    "DamageType": 2
+  },
+  "Targets": {
+    "Ground": true,
+    "Air": true
+  }
+}]
