@@ -2,9 +2,6 @@
 using DLA.Interface;
 using DLA.Models;
 using DLA.Services;
-using Humanizer;
-using Microsoft.AspNetCore.Http.HttpResults;
-using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace DLA.Repository

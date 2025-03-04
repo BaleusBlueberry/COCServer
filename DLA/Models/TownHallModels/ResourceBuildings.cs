@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client.Extensions.Msal;
-
-namespace DLA.Models.TownHallModels;
+﻿namespace DLA.Models.TownHallModels;
 public class ResourceBuildings
 {
     public int GoldMine { set; get; } = 0;

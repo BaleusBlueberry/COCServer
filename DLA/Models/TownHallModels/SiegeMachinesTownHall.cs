@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace DLA.Models.TownHallModels;
+﻿namespace DLA.Models.TownHallModels;
 public class SiegeMachinesTownHall
 {
     public int WallWrecker { get; set; } = 0;

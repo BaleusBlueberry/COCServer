@@ -1,6 +1,5 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
-using DLA.Models.TownHallModels;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 

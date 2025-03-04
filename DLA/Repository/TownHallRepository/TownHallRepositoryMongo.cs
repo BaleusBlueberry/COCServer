@@ -1,6 +1,5 @@
 ﻿using DLA.Interface;
 using DLA.Models.TownHallModels;
-using Humanizer;
 using MongoDB.Driver;
 
 namespace DLA.Repository.TownHallRepository

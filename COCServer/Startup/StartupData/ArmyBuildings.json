@@ -1,0 +1,846 @@
+[{
+  "_id": {
+    "$oid": "679276b7151b967f01155915"
+  },
+  "Name": "ArmyCamp",
+  "Level": 1,
+  "UpgradeTimeSeconds": 299,
+  "Hp": 250,
+  "Experience": 17,
+  "TownHallLevel": 1,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/79/Army_Camp1.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 201
+  },
+  "Unlocks": [],
+  "Capacity": 20,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c468893f254b6ee32d37f0"
+  },
+  "Name": "ArmyCamp",
+  "Level": 4,
+  "UpgradeTimeSeconds": 18000,
+  "Hp": 310,
+  "Experience": 134,
+  "TownHallLevel": 4,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e0/Army_Camp4.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 100000
+  },
+  "Unlocks": [],
+  "Capacity": 40,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4688f3f254b6ee32d37f1"
+  },
+  "Name": "ArmyCamp",
+  "Level": 5,
+  "UpgradeTimeSeconds": 28800,
+  "Hp": 330,
+  "Experience": 169,
+  "TownHallLevel": 5,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/d/dc/Army_Camp5.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 250000
+  },
+  "Unlocks": [],
+  "Capacity": 45,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c468963f254b6ee32d37f2"
+  },
+  "Name": "ArmyCamp",
+  "Level": 3,
+  "UpgradeTimeSeconds": 7200,
+  "Hp": 290,
+  "Experience": 84,
+  "TownHallLevel": 3,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/c/ce/Army_Camp3.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 10000
+  },
+  "Unlocks": [],
+  "Capacity": 35,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c468db3f254b6ee32d37f3"
+  },
+  "Name": "ArmyCamp",
+  "Level": 2,
+  "UpgradeTimeSeconds": 900,
+  "Hp": 270,
+  "Experience": 30,
+  "TownHallLevel": 2,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/92/Army_Camp2.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 2000
+  },
+  "Unlocks": [],
+  "Capacity": 30,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46da23f254b6ee32d37f4"
+  },
+  "Name": "ArmyCamp",
+  "Level": 6,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 350,
+  "Experience": 207,
+  "TownHallLevel": 6,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/68/Army_Camp6.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 750000
+  },
+  "Unlocks": [],
+  "Capacity": 50,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46e153f254b6ee32d37f5"
+  },
+  "Name": "ArmyCamp",
+  "Level": 7,
+  "UpgradeTimeSeconds": 172800,
+  "Hp": 400,
+  "Experience": 415,
+  "TownHallLevel": 9,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fb/Army_Camp7.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 1500000
+  },
+  "Unlocks": [],
+  "Capacity": 55,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46e5a3f254b6ee32d37f6"
+  },
+  "Name": "ArmyCamp",
+  "Level": 8,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 500,
+  "Experience": 509,
+  "TownHallLevel": 10,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/be/Army_Camp8.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 2500000
+  },
+  "Unlocks": [],
+  "Capacity": 60,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46e893f254b6ee32d37f7"
+  },
+  "Name": "ArmyCamp",
+  "Level": 9,
+  "UpgradeTimeSeconds": 345600,
+  "Hp": 600,
+  "Experience": 587,
+  "TownHallLevel": 11,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/7d/Army_Camp9.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 4200000
+  },
+  "Unlocks": [],
+  "Capacity": 65,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46ec13f254b6ee32d37f8"
+  },
+  "Name": "ArmyCamp",
+  "Level": 10,
+  "UpgradeTimeSeconds": 432000,
+  "Hp": 700,
+  "Experience": 657,
+  "TownHallLevel": 12,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/1d/Army_Camp10.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 4500000
+  },
+  "Unlocks": [],
+  "Capacity": 70,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46efc3f254b6ee32d37f9"
+  },
+  "Name": "ArmyCamp",
+  "Level": 11,
+  "UpgradeTimeSeconds": 518400,
+  "Hp": 800,
+  "Experience": 720,
+  "TownHallLevel": 13,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/2/21/Army_Camp11.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 9600000
+  },
+  "Unlocks": [],
+  "Capacity": 75,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c46f3c3f254b6ee32d37fa"
+  },
+  "Name": "ArmyCamp",
+  "Level": 12,
+  "UpgradeTimeSeconds": 604800,
+  "Hp": 850,
+  "Experience": 777,
+  "TownHallLevel": 15,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/19/Army_Camp12.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 13500000
+  },
+  "Unlocks": [],
+  "Capacity": 80,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c476a05865260450fdf76a"
+  },
+  "Name": "Barracks",
+  "Level": 1,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 250,
+  "Experience": 10,
+  "TownHallLevel": 1,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/2/2c/Barracks1.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 100
+  },
+  "Unlocks": [
+    "Barbarian"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c476e85865260450fdf76b"
+  },
+  "Name": "Barracks",
+  "Level": 2,
+  "UpgradeTimeSeconds": 30,
+  "Hp": 290,
+  "Experience": 5,
+  "TownHallLevel": 1,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/f0/Barracks2.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 500
+  },
+  "Unlocks": [
+    "Archer"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c477285865260450fdf76c"
+  },
+  "Name": "Barracks",
+  "Level": 3,
+  "UpgradeTimeSeconds": 600,
+  "Hp": 330,
+  "Experience": 17,
+  "TownHallLevel": 1,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/54/Barracks3.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 2500
+  },
+  "Unlocks": [
+    "Giant"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4776b5865260450fdf76d"
+  },
+  "Name": "Barracks",
+  "Level": 4,
+  "UpgradeTimeSeconds": 1800,
+  "Hp": 250,
+  "Experience": 42,
+  "TownHallLevel": 2,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/84/Barracks4.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 5000
+  },
+  "Unlocks": [
+    "Goblin"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c477c55865260450fdf76e"
+  },
+  "Name": "Barracks",
+  "Level": 5,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 420,
+  "Experience": 120,
+  "TownHallLevel": 3,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/66/Barracks5.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 20000
+  },
+  "Unlocks": [
+    "Wall Breaker"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c477f35865260450fdf76f"
+  },
+  "Name": "Barracks",
+  "Level": 6,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 470,
+  "Experience": 207,
+  "TownHallLevel": 4,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4c/Barracks6.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 120000
+  },
+  "Unlocks": [
+    "Balloon"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c478255865260450fdf770"
+  },
+  "Name": "Barracks",
+  "Level": 7,
+  "UpgradeTimeSeconds": 64800,
+  "Hp": 520,
+  "Experience": 254,
+  "TownHallLevel": 5,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/2/29/Barracks7.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 270000
+  },
+  "Unlocks": [
+    "Wizard"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c478585865260450fdf771"
+  },
+  "Name": "Barracks",
+  "Level": 8,
+  "UpgradeTimeSeconds": 86400,
+  "Hp": 580,
+  "Experience": 293,
+  "TownHallLevel": 6,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/85/Barracks8.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 800000
+  },
+  "Unlocks": [
+    "Healer"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c478995865260450fdf772"
+  },
+  "Name": "Barracks",
+  "Level": 9,
+  "UpgradeTimeSeconds": 129599,
+  "Hp": 650,
+  "Experience": 360,
+  "TownHallLevel": 7,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/3/39/Barracks9.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 1000000
+  },
+  "Unlocks": [
+    "Dragon"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4790b5865260450fdf773"
+  },
+  "Name": "Barracks",
+  "Level": 10,
+  "UpgradeTimeSeconds": 216000,
+  "Hp": 730,
+  "Experience": 464,
+  "TownHallLevel": 8,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/6a/Barracks10.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 1400000
+  },
+  "Unlocks": [
+    "P.E.K.K.A"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4793c5865260450fdf774"
+  },
+  "Name": "Barracks",
+  "Level": 11,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 810,
+  "Experience": 509,
+  "TownHallLevel": 9,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/89/Barracks11.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 2600000
+  },
+  "Unlocks": [
+    "Baby Dragon"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c479685865260450fdf775"
+  },
+  "Name": "Barracks",
+  "Level": 12,
+  "UpgradeTimeSeconds": 432000,
+  "Hp": 900,
+  "Experience": 657,
+  "TownHallLevel": 10,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/f4/Barracks12.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 3700000
+  },
+  "Unlocks": [
+    "Miner"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c48f795865260450fdf776"
+  },
+  "Name": "Barracks",
+  "Level": 13,
+  "UpgradeTimeSeconds": 518400,
+  "Hp": 980,
+  "Experience": 720,
+  "TownHallLevel": 11,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/d/d5/Barracks13.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 6500000
+  },
+  "Unlocks": [
+    "Electro Dragon"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c48fb65865260450fdf777"
+  },
+  "Name": "Barracks",
+  "Level": 14,
+  "UpgradeTimeSeconds": 604800,
+  "Hp": 1050,
+  "Experience": 777,
+  "TownHallLevel": 12,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/41/Barracks14.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 7000000
+  },
+  "Unlocks": [
+    "Yeti"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4900b5865260450fdf778"
+  },
+  "Name": "Barracks",
+  "Level": 15,
+  "UpgradeTimeSeconds": 619200,
+  "Hp": 1150,
+  "Experience": 786,
+  "TownHallLevel": 13,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/0c/Barracks15.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 10000000
+  },
+  "Unlocks": [
+    "Dragon Rider"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4b6665865260450fdf779"
+  },
+  "Name": "Barracks",
+  "Level": 16,
+  "UpgradeTimeSeconds": 691200,
+  "Hp": 1250,
+  "Experience": 831,
+  "TownHallLevel": 14,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/2/21/Barracks16.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 11000000
+  },
+  "Unlocks": [
+    "Electro Titan"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4ba565865260450fdf77a"
+  },
+  "Name": "Barracks",
+  "Level": 17,
+  "UpgradeTimeSeconds": 1036800,
+  "Hp": 1350,
+  "Experience": 1018,
+  "TownHallLevel": 15,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4e/Barracks17.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 12600000
+  },
+  "Unlocks": [
+    "Root Rider"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bab95865260450fdf77b"
+  },
+  "Name": "Barracks",
+  "Level": 18,
+  "UpgradeTimeSeconds": 1296000,
+  "Hp": 1450,
+  "Experience": 1018,
+  "TownHallLevel": 16,
+  "BuildingType": 1,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/b5/Barracks18.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 21000000
+  },
+  "Unlocks": [
+    "Thrower"
+  ],
+  "Capacity": 0,
+  "HeroSlots": 0,
+  "HeroUpgrades": {
+    "BarbarianKing": 0,
+    "ArcherQueen": 0,
+    "GrandWarden": 0,
+    "RoyalChampion": 0,
+    "MinionPrince": 0
+  }
+}]

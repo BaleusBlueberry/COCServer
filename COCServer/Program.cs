@@ -18,7 +18,6 @@ using DLA.Repository.TownHallRepository;
 using DLA.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
 namespace COCServer
@@ -56,11 +55,7 @@ namespace COCServer
                 identityOptions.Password.RequireNonAlphanumeric = true; // Requires at least one special character
                 identityOptions.Password.RequireUppercase = true;
                 identityOptions.Password.RequireLowercase = true;
-
-            }, mongoOptions =>
-            {
-                mongoOptions.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            });
+            }, mongoOptions => mongoOptions.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection"));
 
             var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 
@@ -72,7 +67,6 @@ namespace COCServer
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidIssuer = jwtSettings["Issuer"],
@@ -89,6 +83,12 @@ namespace COCServer
 
             builder.Services.AddScoped<DefensiveBuildingsSeeder>();
 
+            builder.Services.AddScoped<ArmyBuildingsSeeder>();
+
+            builder.Services.AddScoped<ResourceBuildingsSeeder>();
+
+            builder.Services.AddScoped<TrapBuildingsSeeder>();
+
             builder.Services.AddScoped<JwtService>();
 
             builder.Services.AddScoped<BuildingService>();
@@ -98,7 +98,6 @@ namespace COCServer
             builder.Services.AddEndpointsApiExplorer();
 
             builder.Services.AddSwaggerGen();
-
 
             var corsPolicy = "CorsPolicy";
 
@@ -119,7 +118,6 @@ namespace COCServer
             builder.Logging.ClearProviders();
             builder.Logging.AddDebug();
             builder.Logging.AddConsole(); // Add console logging
-            
 
             builder.Logging.SetMinimumLevel(builder.Environment.IsDevelopment()
                 ? LogLevel.Debug
@@ -130,20 +128,13 @@ namespace COCServer
             app.UseCors(corsPolicy);
 
             await DataSeeder.SeedDataAsync(app);
-            // Configure the HTTP request pipeline.
-            //if (!app.Environment.IsDevelopment())
-            //{
-            //    app.UseExceptionHandler("/Home/Error");
-            //    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-            //    app.UseHsts();
-            //}
+
             if (builder.Environment.IsDevelopment())
             {
                 app.UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                     options.RoutePrefix = string.Empty;
-                    
                 });
                 app.UseSwagger();
             }

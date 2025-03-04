@@ -1,5 +1,4 @@
 ﻿using DLA.Models.BuildingModels.DefensiveBuildingsModels;
-using DLA.Repository.BuildingsRepositories;
 using DLA.Repository;
 
 namespace COCServer.Startup.SeedData

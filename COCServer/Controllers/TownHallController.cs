@@ -1,10 +1,7 @@
-﻿using System.Diagnostics;
-using DLA.Models.BuildingModels;
-using DLA.Models.TownHallModels;
+﻿using DLA.Models.TownHallModels;
 using DLA.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NuGet.Protocol.Core.Types;
 
 namespace COCServer.Controllers
 {

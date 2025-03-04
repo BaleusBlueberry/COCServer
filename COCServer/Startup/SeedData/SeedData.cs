@@ -1,6 +1,5 @@
 ﻿using DLA.Models;
 using Microsoft.AspNetCore.Identity;
-using System.Configuration;
 
 namespace COCServer.Startup.SeedData;
 

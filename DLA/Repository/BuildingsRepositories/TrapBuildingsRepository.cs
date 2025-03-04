@@ -1,7 +1,5 @@
 ﻿using DLA.Interface;
-using DLA.Models.BuildingModels.DefensiveBuildingsModels;
 using DLA.Models.BuildingModels.TrapBuildingsModels;
-using DLA.Models.TownHallModels;
 using MongoDB.Driver;
 
 namespace DLA.Repository.BuildingsRepositories

@@ -2,12 +2,10 @@
 using COCServer.DTOs.Extensions;
 using COCServer.Startup.JWT;
 using DLA.Models;
-using DLA.Models.UserData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver.Linq;
-using System.Security.Claims;
 
 namespace COCServer.Controllers;
 

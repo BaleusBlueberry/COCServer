@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
-
-namespace DLA.Models.TownHallModels;
+﻿namespace DLA.Models.TownHallModels;
 
 public class ArmyBuildingsTownHall
 {

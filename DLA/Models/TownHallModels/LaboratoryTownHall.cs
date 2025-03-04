@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-
-namespace DLA.Models.TownHallModels;
+﻿namespace DLA.Models.TownHallModels;
 
 public class LaboratoryTownHall
 {

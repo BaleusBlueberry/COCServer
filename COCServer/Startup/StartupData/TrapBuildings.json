@@ -1,0 +1,432 @@
+[{
+  "_id": {
+    "$oid": "67790dc5943be6c2d9111e3a"
+  },
+  "Name": "Bomb",
+  "Level": 1,
+  "UpgradeTimeSeconds": 0,
+  "Hp": 0,
+  "Experience": 0,
+  "TownHallLevel": 3,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/a/a6/Bomb1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 400
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 20
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67791020943be6c2d9111e3b"
+  },
+  "Name": "Bomb",
+  "Level": 2,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 0,
+  "Experience": 18,
+  "TownHallLevel": 3,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/a/a6/Bomb1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 24
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6eb15b61341ccae971e16"
+  },
+  "Name": "Bomb",
+  "Level": 3,
+  "UpgradeTimeSeconds": 3600,
+  "Hp": 0,
+  "Experience": 60,
+  "TownHallLevel": 5,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/0a/Bomb3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 2,
+    "Damage": 29
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ebbeb61341ccae971e17"
+  },
+  "Name": "Bomb",
+  "Level": 4,
+  "UpgradeTimeSeconds": 7200,
+  "Hp": 0,
+  "Experience": 84,
+  "TownHallLevel": 7,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/0a/Bomb3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 75000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 35
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ec02b61341ccae971e18"
+  },
+  "Name": "Bomb",
+  "Level": 5,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 0,
+  "Experience": 120,
+  "TownHallLevel": 8,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/71/Bomb5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 220000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 42
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ec58b61341ccae971e19"
+  },
+  "Name": "Bomb",
+  "Level": 6,
+  "UpgradeTimeSeconds": 21600,
+  "Hp": 0,
+  "Experience": 146,
+  "TownHallLevel": 9,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/71/Bomb5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 450000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 54
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ecbfb61341ccae971e1a"
+  },
+  "Name": "Bomb",
+  "Level": 7,
+  "UpgradeTimeSeconds": 28800,
+  "Hp": 0,
+  "Experience": 169,
+  "TownHallLevel": 10,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/62/Bomb7.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 650000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 72
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ecf6b61341ccae971e1b"
+  },
+  "Name": "Bomb",
+  "Level": 8,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 0,
+  "Experience": 207,
+  "TownHallLevel": 11,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/62/Bomb7.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1100000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 92
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ed57b61341ccae971e1c"
+  },
+  "Name": "Bomb",
+  "Level": 9,
+  "UpgradeTimeSeconds": 86400,
+  "Hp": 0,
+  "Experience": 293,
+  "TownHallLevel": 13,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/5d/Bomb9.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1500000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 125
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6edf7b61341ccae971e1d"
+  },
+  "Name": "Bomb",
+  "Level": 10,
+  "UpgradeTimeSeconds": 172800,
+  "Hp": 0,
+  "Experience": 415,
+  "TownHallLevel": 14,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/5d/Bomb9.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2000000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 140
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ee2cb61341ccae971e1e"
+  },
+  "Name": "Bomb",
+  "Level": 11,
+  "UpgradeTimeSeconds": 259200,
+  "Hp": 0,
+  "Experience": 509,
+  "TownHallLevel": 15,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/78/Bomb11.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 3000000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 155
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ee69b61341ccae971e1f"
+  },
+  "Name": "Bomb",
+  "Level": 12,
+  "UpgradeTimeSeconds": 518400,
+  "Hp": 0,
+  "Experience": 720,
+  "TownHallLevel": 16,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/78/Bomb11.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 6750000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 170
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ee9fb61341ccae971e20"
+  },
+  "Name": "Bomb",
+  "Level": 13,
+  "UpgradeTimeSeconds": 691200,
+  "Hp": 0,
+  "Experience": 831,
+  "TownHallLevel": 17,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e2/Bomb13_unarmed.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 10000000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 3,
+    "Damage": 185
+  },
+  "TriggerRadius": 1.5,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6ef65b61341ccae971e21"
+  },
+  "Name": "SpringTrap",
+  "Level": 1,
+  "UpgradeTimeSeconds": 0,
+  "Hp": 0,
+  "Experience": 0,
+  "TownHallLevel": 4,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/74/Spring_Trap1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 0,
+    "Damage": 10
+  },
+  "TriggerRadius": 0.800000011920929,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6efc0b61341ccae971e22"
+  },
+  "Name": "SpringTrap",
+  "Level": 2,
+  "UpgradeTimeSeconds": 10800,
+  "Hp": 0,
+  "Experience": 103,
+  "TownHallLevel": 7,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/74/Spring_Trap1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 250000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 0,
+    "Damage": 12
+  },
+  "TriggerRadius": 0.800000011920929,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6f008b61341ccae971e23"
+  },
+  "Name": "SpringTrap",
+  "Level": 3,
+  "UpgradeTimeSeconds": 32400,
+  "Hp": 0,
+  "Experience": 180,
+  "TownHallLevel": 8,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e2/Spring_Trap3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 375000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 0,
+    "Damage": 14
+  },
+  "TriggerRadius": 0.800000011920929,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6f03ab61341ccae971e24"
+  },
+  "Name": "SpringTrap",
+  "Level": 4,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 0,
+  "Experience": 207,
+  "TownHallLevel": 9,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e2/Spring_Trap3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 700000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 0,
+    "Damage": 16
+  },
+  "TriggerRadius": 0.800000011920929,
+  "SpawnedUnits": 0
+},
+{
+  "_id": {
+    "$oid": "67c6f08ab61341ccae971e25"
+  },
+  "Name": "SpringTrap",
+  "Level": 5,
+  "UpgradeTimeSeconds": 86400,
+  "Hp": 0,
+  "Experience": 293,
+  "TownHallLevel": 10,
+  "BuildingType": 3,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/d/d5/Spring_Trap5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 800000
+  },
+  "DamageType": {
+    "DamageType": 1,
+    "DamageRadius": 0,
+    "Damage": 18
+  },
+  "TriggerRadius": 0.800000011920929,
+  "SpawnedUnits": 0
+}]

@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileSystemGlobbing;
-
-namespace DLA.Models.TownHallModels
+﻿namespace DLA.Models.TownHallModels
 {
     public class DefensiveBuildingsTownHall
     {

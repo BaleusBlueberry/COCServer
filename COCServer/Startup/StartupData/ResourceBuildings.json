@@ -1,0 +1,672 @@
+[{
+  "_id": {
+    "$oid": "6778fabbbb70ddc5efdae094"
+  },
+  "Name": "ElixirCollector",
+  "Level": 16,
+  "UpgradeTimeSeconds": 345600,
+  "Hp": 1350,
+  "Experience": 587,
+  "TownHallLevel": 14,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/b9/Elixir_Collector16.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 2000000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 385000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 7000
+},
+{
+  "_id": {
+    "$oid": "67c7035eb61341ccae971e26"
+  },
+  "Name": "GoldMine",
+  "Level": 1,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 400,
+  "Experience": 3,
+  "TownHallLevel": 1,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/bf/Gold_Mine1.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 150
+  },
+  "StorageCapacityGold": 1000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 200
+},
+{
+  "_id": {
+    "$oid": "67c70618985b6cb5e6c4d164"
+  },
+  "Name": "GoldMine",
+  "Level": 2,
+  "UpgradeTimeSeconds": 30,
+  "Hp": 440,
+  "Experience": 5,
+  "TownHallLevel": 1,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/55/Gold_Mine2.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 300
+  },
+  "StorageCapacityGold": 2000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 400
+},
+{
+  "_id": {
+    "$oid": "67c70668985b6cb5e6c4d165"
+  },
+  "Name": "GoldMine",
+  "Level": 3,
+  "UpgradeTimeSeconds": 120,
+  "Hp": 480,
+  "Experience": 10,
+  "TownHallLevel": 2,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/e4/Gold_Mine3.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 700
+  },
+  "StorageCapacityGold": 3000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 600
+},
+{
+  "_id": {
+    "$oid": "67c706d9985b6cb5e6c4d166"
+  },
+  "Name": "GoldMine",
+  "Level": 4,
+  "UpgradeTimeSeconds": 300,
+  "Hp": 520,
+  "Experience": 17,
+  "TownHallLevel": 2,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/97/Gold_Mine4.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 1400
+  },
+  "StorageCapacityGold": 5000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 800
+},
+{
+  "_id": {
+    "$oid": "67c707a7985b6cb5e6c4d167"
+  },
+  "Name": "GoldMine",
+  "Level": 5,
+  "UpgradeTimeSeconds": 1200,
+  "Hp": 560,
+  "Experience": 34,
+  "TownHallLevel": 3,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/1a/Gold_Mine5.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 3000
+  },
+  "StorageCapacityGold": 10000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1000
+},
+{
+  "_id": {
+    "$oid": "67c7080a985b6cb5e6c4d168"
+  },
+  "Name": "GoldMine",
+  "Level": 6,
+  "UpgradeTimeSeconds": 3600,
+  "Hp": 600,
+  "Experience": 60,
+  "TownHallLevel": 3,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/86/Gold_Mine6.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 7000
+  },
+  "StorageCapacityGold": 20000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1300
+},
+{
+  "_id": {
+    "$oid": "67c70880985b6cb5e6c4d169"
+  },
+  "Name": "GoldMine",
+  "Level": 7,
+  "UpgradeTimeSeconds": 7200,
+  "Hp": 640,
+  "Experience": 84,
+  "TownHallLevel": 4,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/11/Gold_Mine7.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 14000
+  },
+  "StorageCapacityGold": 30000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1600
+},
+{
+  "_id": {
+    "$oid": "67c708ca985b6cb5e6c4d16a"
+  },
+  "Name": "GoldMine",
+  "Level": 8,
+  "UpgradeTimeSeconds": 10800,
+  "Hp": 680,
+  "Experience": 103,
+  "TownHallLevel": 4,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/52/Gold_Mine8.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 28000
+  },
+  "StorageCapacityGold": 50000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1900
+},
+{
+  "_id": {
+    "$oid": "67c70921985b6cb5e6c4d16b"
+  },
+  "Name": "GoldMine",
+  "Level": 9,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 720,
+  "Experience": 120,
+  "TownHallLevel": 5,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/bf/Gold_Mine9.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 56000
+  },
+  "StorageCapacityGold": 75000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 2200
+},
+{
+  "_id": {
+    "$oid": "67c7096c985b6cb5e6c4d16c"
+  },
+  "Name": "GoldMine",
+  "Level": 10,
+  "UpgradeTimeSeconds": 21600,
+  "Hp": 780,
+  "Experience": 146,
+  "TownHallLevel": 5,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/e/eb/Gold_Mine10.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 75000
+  },
+  "StorageCapacityGold": 100000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 2800
+},
+{
+  "_id": {
+    "$oid": "67c709a8985b6cb5e6c4d16d"
+  },
+  "Name": "GoldMine",
+  "Level": 11,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 860,
+  "Experience": 207,
+  "TownHallLevel": 7,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/0d/Gold_Mine11.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 85000
+  },
+  "StorageCapacityGold": 150000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 3500
+},
+{
+  "_id": {
+    "$oid": "67c709eb985b6cb5e6c4d16e"
+  },
+  "Name": "GoldMine",
+  "Level": 12,
+  "UpgradeTimeSeconds": 57600,
+  "Hp": 960,
+  "Experience": 240,
+  "TownHallLevel": 8,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4d/Gold_Mine12.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 170000
+  },
+  "StorageCapacityGold": 200000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 4200
+},
+{
+  "_id": {
+    "$oid": "67c70a48985b6cb5e6c4d16f"
+  },
+  "Name": "GoldMine",
+  "Level": 13,
+  "UpgradeTimeSeconds": 72000,
+  "Hp": 1080,
+  "Experience": 268,
+  "TownHallLevel": 10,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/b9/Gold_Mine13.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 400000
+  },
+  "StorageCapacityGold": 250000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 4900
+},
+{
+  "_id": {
+    "$oid": "67c70aa0985b6cb5e6c4d170"
+  },
+  "Name": "GoldMine",
+  "Level": 14,
+  "UpgradeTimeSeconds": 144000,
+  "Hp": 1180,
+  "Experience": 379,
+  "TownHallLevel": 11,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/b/bd/Gold_Mine14.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 800000
+  },
+  "StorageCapacityGold": 300000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 5600
+},
+{
+  "_id": {
+    "$oid": "67c70af7985b6cb5e6c4d171"
+  },
+  "Name": "GoldMine",
+  "Level": 15,
+  "UpgradeTimeSeconds": 158400,
+  "Hp": 1280,
+  "Experience": 487,
+  "TownHallLevel": 12,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/8/8c/Gold_Mine15.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 1200000
+  },
+  "StorageCapacityGold": 350000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 6300
+},
+{
+  "_id": {
+    "$oid": "67c70b46985b6cb5e6c4d172"
+  },
+  "Name": "GoldMine",
+  "Level": 16,
+  "UpgradeTimeSeconds": 345600,
+  "Hp": 1350,
+  "Experience": 587,
+  "TownHallLevel": 14,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/58/Gold_Mine16.png",
+  "UpgradeCost": {
+    "ResourceType": 1,
+    "Cost": 2000000
+  },
+  "StorageCapacityGold": 385000,
+  "StorageCapacityElixir": 0,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 7000
+},
+{
+  "_id": {
+    "$oid": "67c70c72985b6cb5e6c4d173"
+  },
+  "Name": "ElixirCollector",
+  "Level": 1,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 400,
+  "Experience": 3,
+  "TownHallLevel": 1,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/5/5e/Elixir_Collector1.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 150
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 1000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 200
+},
+{
+  "_id": {
+    "$oid": "67c70cbf985b6cb5e6c4d174"
+  },
+  "Name": "ElixirCollector",
+  "Level": 2,
+  "UpgradeTimeSeconds": 30,
+  "Hp": 440,
+  "Experience": 5,
+  "TownHallLevel": 1,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/05/Elixir_Collector2.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 300
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 2000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 400
+},
+{
+  "_id": {
+    "$oid": "67c70cff985b6cb5e6c4d175"
+  },
+  "Name": "ElixirCollector",
+  "Level": 3,
+  "UpgradeTimeSeconds": 120,
+  "Hp": 480,
+  "Experience": 10,
+  "TownHallLevel": 2,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/6/6d/Elixir_Collector3.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 700
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 3000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 600
+},
+{
+  "_id": {
+    "$oid": "67c70d41985b6cb5e6c4d176"
+  },
+  "Name": "ElixirCollector",
+  "Level": 4,
+  "UpgradeTimeSeconds": 10,
+  "Hp": 520,
+  "Experience": 17,
+  "TownHallLevel": 2,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/95/Elixir_Collector4.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1400
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 5000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 800
+},
+{
+  "_id": {
+    "$oid": "67c70d9b985b6cb5e6c4d177"
+  },
+  "Name": "ElixirCollector",
+  "Level": 5,
+  "UpgradeTimeSeconds": 1200,
+  "Hp": 560,
+  "Experience": 34,
+  "TownHallLevel": 3,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/44/Elixir_Collector5.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 3000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 10000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1000
+},
+{
+  "_id": {
+    "$oid": "67c70dd3985b6cb5e6c4d178"
+  },
+  "Name": "ElixirCollector",
+  "Level": 6,
+  "UpgradeTimeSeconds": 3600,
+  "Hp": 600,
+  "Experience": 60,
+  "TownHallLevel": 3,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/0/07/Elixir_Collector6.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 7000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 20000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1300
+},
+{
+  "_id": {
+    "$oid": "67c70e0d985b6cb5e6c4d179"
+  },
+  "Name": "ElixirCollector",
+  "Level": 7,
+  "UpgradeTimeSeconds": 7200,
+  "Hp": 640,
+  "Experience": 84,
+  "TownHallLevel": 4,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/3/35/Elixir_Collector7.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 14000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 30000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1600
+},
+{
+  "_id": {
+    "$oid": "67c70e51985b6cb5e6c4d17a"
+  },
+  "Name": "ElixirCollector",
+  "Level": 8,
+  "UpgradeTimeSeconds": 10800,
+  "Hp": 680,
+  "Experience": 103,
+  "TownHallLevel": 4,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/fc/Elixir_Collector8.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 28000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 50000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 1900
+},
+{
+  "_id": {
+    "$oid": "67c70e77985b6cb5e6c4d17b"
+  },
+  "Name": "ElixirCollector",
+  "Level": 9,
+  "UpgradeTimeSeconds": 14400,
+  "Hp": 720,
+  "Experience": 120,
+  "TownHallLevel": 5,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/79/Elixir_Collector9.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 56000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 75000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 2200
+},
+{
+  "_id": {
+    "$oid": "67c70eb2985b6cb5e6c4d17c"
+  },
+  "Name": "ElixirCollector",
+  "Level": 10,
+  "UpgradeTimeSeconds": 21600,
+  "Hp": 780,
+  "Experience": 146,
+  "TownHallLevel": 5,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/f/f0/Elixir_Collector10.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 75000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 100000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 2800
+},
+{
+  "_id": {
+    "$oid": "67c70eda985b6cb5e6c4d17d"
+  },
+  "Name": "ElixirCollector",
+  "Level": 11,
+  "UpgradeTimeSeconds": 43200,
+  "Hp": 860,
+  "Experience": 207,
+  "TownHallLevel": 7,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/9/9f/Elixir_Collector11.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 85000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 150000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 3500
+},
+{
+  "_id": {
+    "$oid": "67c70f09985b6cb5e6c4d17e"
+  },
+  "Name": "ElixirCollector",
+  "Level": 12,
+  "UpgradeTimeSeconds": 57600,
+  "Hp": 960,
+  "Experience": 240,
+  "TownHallLevel": 8,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/4f/Elixir_Collector12.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 170000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 200000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 4200
+},
+{
+  "_id": {
+    "$oid": "67c70f2d985b6cb5e6c4d17f"
+  },
+  "Name": "ElixirCollector",
+  "Level": 13,
+  "UpgradeTimeSeconds": 72000,
+  "Hp": 1080,
+  "Experience": 268,
+  "TownHallLevel": 10,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/1/12/Elixir_Collector13.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 400000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 250000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 4900
+},
+{
+  "_id": {
+    "$oid": "67c70f55985b6cb5e6c4d180"
+  },
+  "Name": "ElixirCollector",
+  "Level": 14,
+  "UpgradeTimeSeconds": 144000,
+  "Hp": 1180,
+  "Experience": 379,
+  "TownHallLevel": 11,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/4/49/Elixir_Collector14.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 800000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 300000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 5600
+},
+{
+  "_id": {
+    "$oid": "67c70f81985b6cb5e6c4d181"
+  },
+  "Name": "ElixirCollector",
+  "Level": 15,
+  "UpgradeTimeSeconds": 158400,
+  "Hp": 1280,
+  "Experience": 487,
+  "TownHallLevel": 12,
+  "BuildingType": 5,
+  "Picture": "https://static.wikia.nocookie.net/clashofclans/images/7/7f/Elixir_Collector15.png",
+  "UpgradeCost": {
+    "ResourceType": 0,
+    "Cost": 1200000
+  },
+  "StorageCapacityGold": 0,
+  "StorageCapacityElixir": 350000,
+  "StorageCapacityDarkElixir": 0,
+  "ProductionRate": 6300
+}]

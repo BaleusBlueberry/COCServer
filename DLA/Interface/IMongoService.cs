@@ -1,5 +1,4 @@
-﻿using DLA.Models;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 
 namespace DLA.Interface
 {

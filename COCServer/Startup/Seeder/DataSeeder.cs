@@ -18,6 +18,15 @@ public static class DataSeeder
                 var DefensiveBuildingSeeder = scope.ServiceProvider.GetRequiredService<DefensiveBuildingsSeeder>();
                 await DefensiveBuildingSeeder.SeedDataAsync("DefensiveBuildingsSeed.json");
 
+                var ResourceBuildingsSeeder = scope.ServiceProvider.GetRequiredService<ResourceBuildingsSeeder>();
+                await ResourceBuildingsSeeder.SeedDataAsync("ResourceBuildings.json");
+
+                var ArmyBuildingsSeeder = scope.ServiceProvider.GetRequiredService<ArmyBuildingsSeeder>();
+                await ArmyBuildingsSeeder.SeedDataAsync("ArmyBuildings.json");
+
+                var TrapBuildingsSeeder = scope.ServiceProvider.GetRequiredService<TrapBuildingsSeeder>();
+                await TrapBuildingsSeeder.SeedDataAsync("TrapBuildings.json");
+
                 var authSeeder = services.GetRequiredService<SeedData.Seeder>();
                 await authSeeder.SeedRolesAndUsersAsync();
             }
